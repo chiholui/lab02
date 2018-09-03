@@ -3,7 +3,7 @@ cors = require('cors');
 
 var express = require('express');
 var app = express();
-var APIKEY = "";  //signup at api.openweathermap.org and obtain an API Key
+var APIKEY = "0746876dc07896953dcc51817ef1ce70";  //signup at api.openweathermap.org and obtain an API Key
 
 var options = {
     host: 'api.openweathermap.org',
@@ -44,7 +44,7 @@ app.get('/api/weather',function(req,res) {
 app.listen(process.env.PORT || 8099);
 
 function setOptionPath(city) {
-	options.path = "/data/2.5/weather?q=" + city.replace(/ /g,"+") + "&units=metric&APPID=" + APIKEY;
+	options.path = "/data/2.5/weather?q=" + city.replace(/ /g,"+") + "&units=metric&APPID=" + "0746876dc07896953dcc51817ef1ce70";
 }
 
 function getWeatherDetails(callback) {
